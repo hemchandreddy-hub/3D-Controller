@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Character Controller</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="lo">Loading 3D Character...</div>
+
+  <div id="c" style="display: none;">
+    <h2 class="text">Character Controls</h2>
+    <p class="text">Use the mouse to orbit the scene.</p>
+
+    <div class="directional-grid">
+      <button class="cb" onclick="moveCharacter(0, 0, 1)">▲Forward</button>
+      <button class="cb" onclick="moveCharacter(-1, 0, 0)">◀ Left</button>
+    <button class="cb" onclick="moveCharacter(1, 0, 0)">Right ▶</button> 
+       <button class="cb" onclick="moveCharacter(0, 0, -1)">▼ Back</button>
+     
+    </div>
+
+    <div class="flex">
+      <button class="cb" onclick="moveCharacter(0, 1, 0)">Jump ↑</button>
+      <button class="cb" onclick="moveCharacter(0, -1, 0)">Crouch ↓</button>
+
+    </div>
+  </div>
+
+  <div id="scene-container"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
