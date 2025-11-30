@@ -30,6 +30,3 @@ This is a simple 3D character controller made using **HTML, CSS, JavaScript, and
 ### Notes
 - Needs a local server to load 3D models.
 - Works on desktop browsers (Chrome, Edge, Firefox).
-
-### Thank You
-This project was created as part of an internship task submission.
